@@ -9,7 +9,7 @@
 <body>
     <section>      
         <img src="edf1.png" data-speed="-1" class="layer">
-        <img src="edf2.png" data-speed="-2" class="layer">
+        <img src="edf2.png" data-speed="-2" class="layer arriba">
         <img src="edf3.png" data-speed="1" class="layer grande">
         <img src="personas.png" data-speed="2" class="layer">
         <img src="auto.png" data-speed="-2" class="layer">
@@ -26,8 +26,6 @@
                 const speed = layer.getAttribute('data-speed')
                 const x = (window.innerWidth - e.pageX*speed)/300
                 const y = (window.innerHeight - e.pageY*speed)/300
-                console.log(x, y)
-
                 layer.style.transform =  `translateX(${x}px) translateY(${y}px)`
 
             });
