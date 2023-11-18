@@ -32,3 +32,8 @@ section h2{
 .layer{
     transition: 0.1s;
 }
+.grande{
+    top: -10px;
+    left: -40px;
+
+}
